@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, ScrollView, TouchableOpacity, StyleSheet, SafeAreaView, FlatList, TextInput } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, StyleSheet, SafeAreaView, FlatList, TextInput, StatusBar, Platform } from 'react-native';
 import { ChevronLeft, TrendingUp, TrendingDown, Wallet, Eye, EyeOff, Calendar, Download, Filter } from 'lucide-react-native';
 
 import BottomNavigation from './BottomNavigation';
@@ -283,12 +283,23 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
   },
+  // header: {
+  //   flexDirection: 'row',
+  //   alignItems: 'center',
+  //   justifyContent: 'space-between',
+  //   paddingHorizontal: 16,
+  //   paddingVertical: 12,
+  //   borderBottomWidth: 1,
+  //   borderBottomColor: '#f3f4f6',
+  // },
   header: {
     flexDirection: 'row',
-    alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: 16,
-    paddingVertical: 12,
+    alignItems: 'center',
+    paddingHorizontal: 20,
+    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 15,
+    paddingBottom: 15,
+    backgroundColor: '#fff',
     borderBottomWidth: 1,
     borderBottomColor: '#f3f4f6',
   },

@@ -312,7 +312,7 @@ header: {
   justifyContent: 'space-between',
   alignItems: 'center',
   paddingHorizontal: 20,
-  paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight - 20 : 15,
+  paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 15,
   paddingBottom: 15,
   backgroundColor: '#fff',
   borderBottomWidth: 1,

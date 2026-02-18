@@ -27,13 +27,17 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-
     "plugins": [
       "./plugins/withRemoveBundleCompression.js"
     ],
     "owner": "ernzo",
     "runtimeVersion": {
       "policy": "appVersion"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f1dbceb7-f4ab-4df6-9339-4e0ddb3b3091"
+      }
     }
   }
 }

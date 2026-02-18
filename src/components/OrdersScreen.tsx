@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, ScrollView, TouchableOpacity, StyleSheet, SafeAreaView, FlatList, Alert, Modal } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, StyleSheet, SafeAreaView, FlatList, Alert, Modal, StatusBar, Platform  } from 'react-native';
 import { ChevronLeft, Clock, CheckCircle2, AlertCircle, FileText, XCircle, Trash2 } from 'lucide-react-native';
 import BottomNavigation from './BottomNavigation';
 
@@ -254,13 +254,17 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
   },
-  header: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-  },
+header: {
+  flexDirection: 'row',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  paddingHorizontal: 20,
+  paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 15,
+  paddingBottom: 15,
+  backgroundColor: '#fff',
+  borderBottomWidth: 1,
+  borderBottomColor: '#f3f4f6',
+},
   headerTitle: {
     fontSize: 20,
     fontWeight: 'bold',
