@@ -27,20 +27,13 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "extra": {
-      "eas": {
-        "projectId": "2dec1a43-ebfb-4650-b3c7-596f9684a6b6"
-      }
-    },
+
     "plugins": [
       "./plugins/withRemoveBundleCompression.js"
     ],
-    "owner": "uncks",
+    "owner": "ernzo",
     "runtimeVersion": {
       "policy": "appVersion"
-    },
-    "updates": {
-      "url": "https://u.expo.dev/2dec1a43-ebfb-4650-b3c7-596f9684a6b6"
     }
   }
 }
