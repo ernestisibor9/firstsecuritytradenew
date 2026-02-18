@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "First Securities Trading",
+    "slug": "first-securities-trading-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.uncks.firstsecuritiestradingapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2dec1a43-ebfb-4650-b3c7-596f9684a6b6"
+      }
+    },
+    "plugins": [
+      "./plugins/withRemoveBundleCompression.js"
+    ],
+    "owner": "uncks",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/2dec1a43-ebfb-4650-b3c7-596f9684a6b6"
+    }
+  }
+}
